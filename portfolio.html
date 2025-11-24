@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body class="page portfolio-page">
+    <nav class="navbar">
+        <a class="nav-link nav-button nav-left" href="index.html" aria-label="Retour à l'accueil"><i
+                class="fa-solid fa-house"></i></a>
+        <a class="nav-link nav-button" href="index.html#element_AboutMe">About me</a>
+        <a class="nav-link nav-button" href="index.html#element_Skills">Skills</a>
+        <a class="nav-link nav-button" href="index.html#element_Experience">Experience</a>
+        <a class="nav-link nav-button" href="index.html#element_Education">Education</a>
+        <a class="nav-link nav-button" href="portfolio.html">Portfolio</a>
+        <a class="nav-link nav-button" href="contact.html">Contact</a>
+        <a class="nav-link nav-button primary" href="sources/CV_VESIN_Clement.pdf" target="_blank">Download my CV</a>
+    </nav>
+
+    <h1 class="title">My Projects</h1>
+    <div class="skills-grid">
+        <div class="skills-column item projects">
+            <h2>Hunimalis replica</h2>
+            <img src="sources/Hunimalis_Logo.jpg" class="img_round" alt="Hunimalis">
+            <p>Create a replica of Hunimalis website in a team from the UML coneption, databse creation through the
+                developpement</p>
+            <a href="Hunimalis.html" class="nav-button primary">Learn more</a>
+        </div>
+        <div class="skills-column item projects">
+            <h2>Pilot</h2>
+            <img src="sources/Pilot_logo.png" class="img_round" alt="Pilot">
+            <p>Concept and develop a replica of a management application for Pilot factory using UML and C#</p>
+            <a href="Pilot.html" class="nav-button primary">Learn more</a>
+        </div>
+        <div class="skills-column item projects">
+            <h2>Village Tycoon</h2>
+            <img src="sources/village_mainMenu.jpg" class="img_round" alt="Village Tycoon">
+            <p>Develop a game in C# using XAML</p>
+            <a href="Village.html" class="nav-button primary">Learn more</a>
+        </div>
+        <div class="skills-column item projects">
+            <h2>Portfolio</h2>
+            <img src="sources/HTMLCSSJSlogo.png" class="img_round" alt="Portfolio">
+            <p>Develop a professional portfolio to demonstrate my existing skillset and enhance my knowledge in
+                HTML/CSS/JS</p>
+            <a href="Project_portfolio.html" class="nav-button primary">Learn more</a>
+        </div>
+    </div>
+</body>
+<footer class="footer">
+    <p>Clément Vesin</p>
+    <a href="https://www.linkedin.com/in/vesin-clement" target="_blank" rel="noopener noreferrer"
+        aria-label="Mon profil LinkedIn" class="spaceLogo">
+        <i class="fa-brands fa-linkedin" style="font-size: 24px; color: #0e76a8;"></i>
+    </a>
+    <a href="https://github.com/agrume-fiscal8" target="_blank" rel="noopener noreferrer" aria-label="Mon profil GitHub"
+        class="spaceLogo">
+        <i class="fa-brands fa-github" style="font-size: 24px; color: #ffffff;"></i>
+    </a>
+    <a href="https://www.instagram.com/cl3ment74/" target="_blank" rel="noopener noreferrer"
+        aria-label="Mon profil Instagram" class="spaceLogo">
+        <i class="fa-brands fa-instagram instagram-gradient-icon" style="font-size: 24px;"></i>
+    </a>
+    <button class="up" id="upButton" aria-label="Retour vers le haut"
+        onclick="window.scrollTo({top: 0, behavior: 'smooth'})"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="main.js" defer></script>
+
+</footer>
+
+</html>
