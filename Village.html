@@ -6,60 +6,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Portfolio Project</title>
 </head>
 
 <body class="page">
-    <nav class="navbar">
-        <a class="nav-link nav-button nav-left" href="index.html" aria-label="Retour à l'accueil"><i
-                class="fa-solid fa-house"></i></a>
-        <a class="nav-link nav-button" href="index.html#element_AboutMe">About me</a>
-        <a class="nav-link nav-button" href="index.html#element_Skills">Skills</a>
-        <a class="nav-link nav-button" href="index.html#element_Experience">Experience</a>
-        <a class="nav-link nav-button" href="index.html#element_Education">Education</a>
-        <a class="nav-link nav-button" href="portfolio.html">Portfolio</a>
-        <a class="nav-link nav-button" href="contact.html">Contact</a>
-        <a class="nav-link nav-button primary" href="sources/CV_VESIN_Clement.pdf" target="_blank">Download my CV</a>
-    </nav>
+<nav class="navbar">
+    <a class="nav-link nav-button nav-left" href="index.html" aria-label="Retour à l'accueil"><i
+            class="fa-solid fa-house"></i></a>
+    <a class="nav-link nav-button" href="index.html#element_AboutMe">About me</a>
+    <a class="nav-link nav-button" href="index.html#element_Skills">Skills</a>
+    <a class="nav-link nav-button" href="index.html#element_Experience">Experience</a>
+    <a class="nav-link nav-button" href="index.html#element_Education">Education</a>
+    <a class="nav-link nav-button" href="portfolio.html">Portfolio</a>
+    <a class="nav-link nav-button" href="contact.html">Contact</a>
+    <a class="nav-link nav-button primary" href="sources/CV_VESIN_Clement.pdf" target="_blank">Download my CV</a>
+</nav>
 
-    <h1>Village Tycoon</h1>
-    <h2>A tycoon game develop in C# using XAML </h2>
-    <h3>Date: December 2024</h3>
-    <div>
+<button class="return up" id="returnButton" aria-label="Retour au portfolio"
+        onclick="location.href='portfolio.html'"><i class="fa-solid fa-arrow-left"></i></button>
+
+<main class="main-content">
+    <header class="project-header">
+        <h1 class="title-project"><u>Village Tycoon</u></h1>
+        <h2>A tycoon game develop in C# using XAML</h2>
+        <h3><em>Dates:December 2024</em></h3>
+    </header>
+
+    <section class="item project-gallery">
         <h2>Gallery</h2>
-        <p>
-            <img src="sources/village_mainMenu.jpg" alt="MainMenu" class="zoomable">
-            <img src="sources/village_main.png" alt="Main" class="zoomable">
-            <img src="sources/village_Shop.png" alt="Shop" class="zoomable">
-            <img src="sources/village_Protection.jpg" alt="Protection" class="zoomable">
-        </p>
+        <div class="gallery-grid">
+            <img src="sources/village_mainMenu.jpg" alt="Village_Main_Menu" class="zoomable img_round">
+            <img src="sources/village_main.png" alt="Village_Main" class="zoomable img_round">
+            <img src="sources/village_Shop.png" alt="Village_Shop" class="zoomable img_round">
+            <img src="sources/village_Protection.jpg" alt="Village_Protection" class="zoomable img_round">
 
-    </div>
-    <h2>Ready to play ?</h2>
-    <p>Access to the GitHub repository and enjoy it</p>
-    <a href="https://github.com/August7337/SAE_101" class="nav-button primary" target="_blank">Village Tycoon repository</a>
+        </div>
+    </section>
 
-    <script src="main.js" defer></script>
-</body>
+    <section class="item project-details">
+        <h2>Features</h2>
+        <p>It's a complete game with many features:</p>
+        <ul>
+            <li><i class="fa-solid fa-check"></i> A tycoon on village theme</li>
+            <li><i class="fa-solid fa-check"></i> Click on the factory to gain materials</li>
+            <li><i class="fa-solid fa-check"></i> Upgrade your factories and houses for more materials and money</li>
+            <li><i class="fa-solid fa-check"></i> Shop for buy and selling materials</li>
+            <li><i class="fa-solid fa-check"></i> Disaster system and a shop for counter them </li>
+            <li><i class="fa-solid fa-check"></i> Functional game</li>
+        </ul>
+    </section>
 
+    <section class="item project-cta">
+        <h2>Source Code</h2>
+        <p>Access to the GitHub repository</p>
+        <a href="https://github.com/August7337/SAE_101" class="cta" target="_blank">
+            <i class="fa-brands fa-github"></i> Pilot App repository
+        </a>
+    </section>
+</main>
+
+<script src="main.js" defer></script>
 
 <footer class="footer">
     <p>Clément Vesin</p>
     <a href="https://www.linkedin.com/in/vesin-clement" target="_blank" rel="noopener noreferrer"
-        aria-label="Mon profil LinkedIn" class="spaceLogo">
+       aria-label="Mon profil LinkedIn" class="spaceLogo">
         <i class="fa-brands fa-linkedin" style="font-size: 24px; color: #0e76a8;"></i>
     </a>
     <a href="https://github.com/agrume-fiscal8" target="_blank" rel="noopener noreferrer" aria-label="Mon profil GitHub"
-        class="spaceLogo">
+       class="spaceLogo">
         <i class="fa-brands fa-github" style="font-size: 24px; color: #ffffff;"></i>
     </a>
     <a href="https://www.instagram.com/cl3ment74/" target="_blank" rel="noopener noreferrer"
-        aria-label="Mon profil Instagram" class="spaceLogo">
+       aria-label="Mon profil Instagram" class="spaceLogo">
         <i class="fa-brands fa-instagram instagram-gradient-icon" style="font-size: 24px;"></i>
     </a>
     <button class="up" id="upButton" aria-label="Retour vers le haut"
-        onclick="window.scrollTo({top: 0, behavior: 'smooth'})"><i class="fa-solid fa-arrow-up"></i></button>
-
+            onclick="window.scrollTo({top: 0, behavior: 'smooth'})"><i class="fa-solid fa-arrow-up"></i></button>
 </footer>
 
+</body>
 </html>

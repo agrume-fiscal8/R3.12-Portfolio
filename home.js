@@ -46,11 +46,11 @@ function createAndAnimateElement(tag, text, className, delay, parent, id = null,
 // Création des éléments de la page d'accueil
 
 divHome.appendChild(homeName);
-createAndAnimateElement('h1', "Hello 👋", 'homeTransition', 1000, homeName);
-createAndAnimateElement('h2', "I'm Clément VESIN", 'homeTransition', 1500, homeName);
+createAndAnimateElement('h1', "Hello 👋", 'homeTransition', 1000, homeName, 'hello');
+createAndAnimateElement('h2', "I'm Clément VESIN", 'homeTransition', 1500, homeName, 'me');
 
 divHome.appendChild(presentationContainer);
-createAndAnimateElement('p', "I’m a French student in second year of computer science studies at University of Savoy in France, specializing in Application Integration and Information System Management. I am looking for an internship to deepen my skills that i’m study. I’m motived about contributing to innovative projects", ['homeTransition', 'presentation-text'], 2000, presentationContainer);
+createAndAnimateElement('p', "I’m a French student in second year of computer science studies at University of Savoy in France, specializing in Application Integration and Information System Management. I am looking for an internship to deepen my skills that i’m study. I’m motived about contributing to innovative projects", ['homeTransition', 'presentation-text'], 2000, presentationContainer, "about");
 createAndAnimateElement('img', null, 'homeTransition', 2500, presentationContainer, 'imgMe', 'sources/clement.jpg', {
     width: '300px',
     height: '300px',

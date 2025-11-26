@@ -6,63 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
+    <title>Portfolio Project</title>
 </head>
 
 <body class="page">
-    <nav class="navbar">
-        <a class="nav-link nav-button nav-left" href="index.html" aria-label="Retour à l'accueil"><i
-                class="fa-solid fa-house"></i></a>
-        <a class="nav-link nav-button" href="index.html#element_AboutMe">About me</a>
-        <a class="nav-link nav-button" href="index.html#element_Skills">Skills</a>
-        <a class="nav-link nav-button" href="index.html#element_Experience">Experience</a>
-        <a class="nav-link nav-button" href="index.html#element_Education">Education</a>
-        <a class="nav-link nav-button" href="portfolio.html">Portfolio</a>
-        <a class="nav-link nav-button" href="contact.html">Contact</a>
-        <a class="nav-link nav-button primary" href="sources/CV_VESIN_Clement.pdf" target="_blank">Download my CV</a>
-    </nav>
+<nav class="navbar">
+    <a class="nav-link nav-button nav-left" href="index.html" aria-label="Retour à l'accueil"><i
+            class="fa-solid fa-house"></i></a>
+    <a class="nav-link nav-button" href="index.html#element_AboutMe">About me</a>
+    <a class="nav-link nav-button" href="index.html#element_Skills">Skills</a>
+    <a class="nav-link nav-button" href="index.html#element_Experience">Experience</a>
+    <a class="nav-link nav-button" href="index.html#element_Education">Education</a>
+    <a class="nav-link nav-button" href="portfolio.html">Portfolio</a>
+    <a class="nav-link nav-button" href="contact.html">Contact</a>
+    <a class="nav-link nav-button primary" href="sources/CV_VESIN_Clement.pdf" target="_blank">Download my CV</a>
+</nav>
+<button class="return up" id="returnButton" aria-label="Retour au portfolio"
+        onclick="location.href='portfolio.html'"><i class="fa-solid fa-arrow-left"></i></button>
 
-    <h1 class="title">Portfolio</h1>
-    <h3>A professional portfolio to demonstrate my existing skillset and enhance my knowledge in HTML/CSS/JS</h3>
-    <h4>Date: November 2025</h4>
-    <div>
+<main class="main-content">
+    <header class="project-header">
+        <h1 class="title-project"><u>Portfolio</u></h1>
+        <h2>A professional portfolio to demonstrate my existing skillset and enhance my knowledge in HTML/CSS/JS</h2>
+        <h3><em>Dates: November 2025</em></h3>
+    </header>
+
+    <section class="item project-gallery">
         <h2>Gallery</h2>
-        <div class="item">
-        <div class="skills-grid">
-            <img src="sources/Portfolio1.png" alt="MainMenu" class="zoomable">
-            <img src="sources/Portfolio2.png" alt="Main" class="zoomable">
-            <img src="sources/Portfolio3.png" alt="Shop" class="zoomable">
+        <div class="gallery-grid">
+            <img src="sources/Portfolio1.png" alt="Skill_Portfolio" class="zoomable img_round">
+            <img src="sources/Portfolio2.png" alt="Contact_Portfolio" class="zoomable img_round">
+            <img src="sources/Portfolio3.png" alt="Projects_Portfolio" class="zoomable img_round">
+            <img src="sources/Portfolio4.png" alt="A_Project_Portfolio" class="zoomable img_round">
+
         </div>
-        </div>
+    </section>
 
-    </div>
-    <h2>Ready to see ?</h2>
-    <p>Access to the GitHub repository and enjoy it</p>
-    <a href="https://github.com/agrume-fiscal8/R3.12-Portfolio.git" class="nav-button primary" target="_blank">Portfolio repository</a>
-    <script src="main.js" defer></script>
+    <section class="item project-details">
+        <h2>Features</h2>
+        <p>It's a complete website with many features:</p>
+        <ul>
+            <li><i class="fa-solid fa-check"></i> JavaScript animations and filters</li>
+            <li><i class="fa-solid fa-check"></i> Elegant and responsive design</li>
+            <li><i class="fa-solid fa-check"></i> Functional application</li>
+        </ul>
+    </section>
 
-</body>
+    <section class="item project-cta">
+        <h2>Source Code</h2>
+        <p>Access to the GitHub repository</p>
+        <a href="https://github.com/agrume-fiscal8/R3.12-Portfolio.git" class="cta" target="_blank">
+            <i class="fa-brands fa-github"></i> Pilot App repository
+        </a>
+    </section>
+</main>
 
-
+<script src="main.js" defer></script>
 
 <footer class="footer">
     <p>Clément Vesin</p>
     <a href="https://www.linkedin.com/in/vesin-clement" target="_blank" rel="noopener noreferrer"
-        aria-label="Mon profil LinkedIn" class="spaceLogo">
+       aria-label="Mon profil LinkedIn" class="spaceLogo">
         <i class="fa-brands fa-linkedin" style="font-size: 24px; color: #0e76a8;"></i>
     </a>
     <a href="https://github.com/agrume-fiscal8" target="_blank" rel="noopener noreferrer" aria-label="Mon profil GitHub"
-        class="spaceLogo">
+       class="spaceLogo">
         <i class="fa-brands fa-github" style="font-size: 24px; color: #ffffff;"></i>
     </a>
     <a href="https://www.instagram.com/cl3ment74/" target="_blank" rel="noopener noreferrer"
-        aria-label="Mon profil Instagram" class="spaceLogo">
+       aria-label="Mon profil Instagram" class="spaceLogo">
         <i class="fa-brands fa-instagram instagram-gradient-icon" style="font-size: 24px;"></i>
     </a>
     <button class="up" id="upButton" aria-label="Retour vers le haut"
-        onclick="window.scrollTo({top: 0, behavior: 'smooth'})"><i class="fa-solid fa-arrow-up"></i></button>
-
-
+            onclick="window.scrollTo({top: 0, behavior: 'smooth'})"><i class="fa-solid fa-arrow-up"></i></button>
 </footer>
 
+</body>
 </html>

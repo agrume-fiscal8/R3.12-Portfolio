@@ -78,18 +78,4 @@ document.querySelectorAll(".zoomable").forEach(
     }
 )
 
-//footer
-
-// When the user clicks on the button, scroll to the top of the document
-
-const upButton = document.getElementById("upButton");
-
-upButton.addEventListener("click", (event) => {
-    topFunction();
-});
-
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
 
