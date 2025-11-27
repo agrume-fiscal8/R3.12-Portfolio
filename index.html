@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Welcome 👋</title>
-    <link rel="shortcut icon" href="assets/icons/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="sources/icons/logo-iut.ico" type="image/x-icon">
 
 </head>
 
@@ -15,13 +15,12 @@
     <nav class="navbar">
         <a class="nav-link nav-button nav-left" href="index.html" aria-label="Retour à l'accueil"><i
                 class="fa-solid fa-house"></i></a>
-        <a class="nav-link nav-button" href="#element_AboutMe">About me</a>
         <a class="nav-link nav-button" href="#element_Skills">Skills</a>
         <a class="nav-link nav-button" href="#element_Experience">Experience</a>
         <a class="nav-link nav-button" href="#element_Education">Education</a>
         <a class="nav-link nav-button" href="portfolio.html">Portfolio</a>
         <a class="nav-link nav-button" href="contact.html">Contact</a>
-        <a class="nav-link nav-button primary" href="sources/CV_VESIN_Clement.pdf" target="_blank">Download my CV</a>
+        <a class="nav-link nav-button primary" href="sources/CV_Clement_VESIN.pdf" target="_blank">Download my CV</a>
     </nav>
 
     <div class="item">
@@ -30,16 +29,6 @@
         </div>
 
     </div>
-    <section id="element_AboutMe">
-        <h2 class="title"><u>About me</u></h2>
-        <p>I’m a French student in second year of computer science studies at University
-            of Savoy in France, specializing in Application Integration and Information
-            System Management. I am looking for an internship to deepen my skills that
-            i’m study. I’m motived about contributing to innovative projects.</p>
-    </section>
-
-
-
     <section id="element_Skills">
         <h2 class="title"><u>Skills</u></h2>
     </section>
@@ -89,27 +78,43 @@
         <h3 class="subtitle"><u>Soft skills</u></h3>
         <div class="skills-grid item">
             <div class="skills-column">
-                <div class="skill">
+                <div class="softSkill">
+                    <div class="item">
                     <i class="fa-solid fa-users"></i>
                     <p>Teamwork</p>
+                    </div>
                 </div>
-                <div class="skill">
+                <div class="softSkill">
+                    <div class="item">
                     <i class="fa fa-clock"></i>
                     <p>Punctual</p>
+                    </div>
                 </div>
-                <div class="skill">
+                <div class="softSkill">
+                    <div class="item">
                     <i class="fa-solid fa-clipboard-list"></i>
                     <p>Organised</p>
+                    </div>
                 </div>
             </div>
             <div class="skills-column">
-                <div class="skill">
+                <div class="softSkillOnleft ">
+                    <div class="item">
                     <i class="fa-solid fa-compass"></i>
                     <p>Self-directed</p>
+                    </div>
                 </div>
-                <div class="skill">
+                <div class="softSkillOnleft">
+                    <div class="item">
                     <i class="fa-solid fa-bullhorn"></i>
                     <p>Public speaker</p>
+                    </div>
+                </div>
+                <div class="softSkillOnleft">
+                    <div class="item">
+                        <i class="fa-solid fa-book"></i>
+                        <p>Quick learner</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -119,15 +124,15 @@
         <h3 class="subtitle"><u>Language</u></h3>
         <div class="skills-grid item">
             <div class="skillLanguage">
-                <img src="/sources/Flag_of_France.svg.png" alt="French flag" height="85" class="cursed">
+                <img src="/sources/index/Flag_of_France.svg.png" alt="French flag" height="85" class="cursed">
                 <p class="language-text">French: <span class="language"> Native Speaker </span></p>
             </div>
             <div class="skillLanguage">
-                <img src="/sources/Flag_of_the_United_Kingdom_(3-5).svg.png" alt="UK flag" height="85" class="cursed">
+                <img src="/sources/index/Flag_of_the_United_Kingdom_(3-5).svg.png" alt="UK flag" height="85" class="cursed">
                 <p class="language-text">English: <span class="language"> Intermedate B1</span></p>
             </div>
             <div class="skillLanguage">
-                <img src="/sources/Flag_of_Germany.svg.png" alt="German flag" height="85" class="cursed">
+                <img src="/sources/index/Flag_of_Germany.svg.png" alt="German flag" height="85" class="cursed">
                 <p class="language-text">German: <span class="language">Elementary A2</span></p>
             </div>
         </div>
@@ -232,7 +237,6 @@
     <section id="element_References">
         <h2 class="title"><u>References</u></h2>
     </section>
-
     <div>
         <div class="skills-grid">
             <div class="skills-column item reference">
@@ -260,8 +264,8 @@
     </div>
 
 
-    <script src="main.js" defer=""></script>
-    <script src="home.js" defer=""></script>
+    <script src="JS/main.js" defer=""></script>
+    <script src="JS/home.js" defer=""></script>
 </body>
 <footer class="footer">
     <p>Clément Vesin</p>

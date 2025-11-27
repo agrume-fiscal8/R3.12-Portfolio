@@ -85,21 +85,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
     buttonsFilter.forEach(button => {
         button.addEventListener('click', function() {
-            // 1. Récupérer la catégorie du bouton cliqué
+            // 1 Catch the button type
             const filterCategorie = this.getAttribute('data-categorie');
 
-            // 2. Parcourir tous les projets
+            //2. Browse all the projects
             projects.forEach(project => {
                 const projectCategories = project.getAttribute('data-categories');
 
-                // 3. Masquer/Afficher
+                // 3. Hide/Affiched
                 if (filterCategorie === 'tout' || (projectCategories && projectCategories.includes(filterCategorie))) {
-                    // Affiche le projet (le rend visible)
+                    // Make visible the project
                     project.style.display = 'block'
                 } else {
-                    // Masque le projet
+                    // Hide the project
                     project.style.display = 'none';
-                    // projet.classList.add('cache');
                 }
             });
         });

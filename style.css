@@ -48,14 +48,14 @@ a{
 
 .flex-container {
     display: flex;
-    align-items: center; /* Aligne verticalement l'image et le texte */
-    justify-content: center; /* Centre les éléments horizontalement */
-    gap: 20px; /* Ajoute un espace entre l'image et le texte */
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
 .presentation-text {
-    max-width: 700px; /* Le texte ne dépassera pas 500px de large */
-    text-align: left; /* Optionnel: pour aligner le texte à gauche dans son bloc */
+    max-width: 700px;
+    text-align: left;
 }
 
 #imgMe{
@@ -72,27 +72,42 @@ a{
     display: block;
 }
 
+.softSkill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.softSkillOnleft{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+}
+
 .skillLanguage{
 	display: flex;
     align-items: center;
     margin-top: 15px;
     margin-left: 15px;
     margin-bottom: 15px;
-    
+
 
 }
 
 .skills-grid {
     display: flex;
-    justify-content: space-between; /* Pour espacer les colonnes */
+    justify-content: space-between;
 }
 
 .skills-column {
-    width: 49%; /* Chaque colonne prend un peu moins de la moitié pour laisser un espace */
+    width: 49%;
     display: flex;
     flex-direction: column;
 }
 
+/*PROGRESS BAR COLOR*/
 #UML{
     accent-color: red;
 }
@@ -139,12 +154,12 @@ a{
 }
 
 .experience-item:hover .moreAbout-experience {
-    max-height: 200px; /* Hauteur suffisante pour afficher le contenu */
+    max-height: 200px;
     opacity: 1;
     margin-top: 15px;
     margin-left: 15px;
     margin-bottom: 15px;
-    
+
 }
 
 .margin{
@@ -160,9 +175,9 @@ a{
 
 .language{
     color:#fd5949;
-    display: inline-block; /* Permet d'appliquer des marges */
-    margin: 0 10px;      /* Ajoute un espacement horizontal entre les langues */
-    text-align: center;  /* Centre le texte sous le drapeau si vous en avez */
+    display: inline-block;
+    margin: 0 10px;
+    text-align: center;
 }
 
 .experience-item > p {
@@ -173,15 +188,12 @@ a{
     letter-spacing: 0.1px;
     word-break: break-word;
 
-    /* <-- permet d'afficher les retours à la ligne présents dans le HTML */
     white-space: pre-line;
 
-    /* largeur et alignement pour forcer les lignes sur plusieurs lignes lisibles */
     max-width: 100%;
     text-align: left;
 }
 
-/* petit espacement entre les lignes si le navigateur ne respecte pas les retours */
 .experience-item > p br {
     line-height: 1.6;
 }
@@ -227,7 +239,6 @@ a{
     text-decoration: underline;
 }
 
-/* responsive: empiler sur petits écrans */
 @media (max-width: 640px) {
     .reference {
         flex-direction: row;
@@ -245,7 +256,7 @@ a{
     padding: 12px 20px;
     display: flex;
     justify-content: center;
-    gap: 12px;              /* espace entre boutons */
+    gap: 12px;              /* space between buttons */
     align-items: center;
     z-index: 50;
     flex-wrap: wrap;
@@ -254,18 +265,16 @@ a{
 .nav-left {
     display: inline-flex;
     align-items: center;
-    margin-right: 12px; 
-    transform: none; 
+    margin-right: 12px;
+    transform: none;
 }
 
 @media (max-width: 600px) {
-    /* sur mobile, on conserve un petit espacement mais pas de positionnement absolu */
     .nav-left {
         margin-right: 8px;
     }
 }
 
-/* style commun des liens (conserve .nav-link) */
 .nav-link {
     color: #ffffff;
     text-decoration: none;
@@ -273,7 +282,6 @@ a{
     vertical-align: middle;
 }
 
-/* nouveau style "bouton" pour la navbar */
 .nav-button {
     display: inline-flex;
     align-items: center;
@@ -288,7 +296,6 @@ a{
     font-size: 0.96rem;
 }
 
-/* accent au survol (pas de soulignement) */
 .nav-button:hover {
     background: rgba(255,255,255,0.04);
     transform: translateY(-2px);
@@ -296,13 +303,11 @@ a{
     text-decoration: none;
 }
 
-/* state actif / focus clavier accessible */
 .nav-button:focus {
     outline: 3px solid rgba(6,182,212,0.18);
     outline-offset: 3px;
 }
 
-/* variante "primaire" si besoin (ex: CTA dans la navbar) */
 .nav-button.primary {
     background: linear-gradient(90deg,#2563eb,#06b6d4);
     color: #fff;
@@ -313,7 +318,7 @@ a{
     box-shadow: 0 12px 30px rgba(6,182,212,0.18);
 }
 
-/* responsive : garder lisible et empiler si espace restreint */
+/*Function for making responsiv*/
 @media (max-width: 600px) {
     .navbar { gap: 8px; padding: 10px; }
     .nav-button { padding: 8px 10px; font-size: 0.92rem; }
@@ -340,8 +345,6 @@ a{
 
 
 
-
-/* Bouton CTA principal */
 .cta-container {
     text-align: center;
     margin-top: 4%;
@@ -383,7 +386,7 @@ a{
     box-shadow: 0 18px 36px rgba(6,182,212,0.12);
 }
 
-/* Responsive — garder le bouton proportionnel sur petits écrans */
+/* Responsive function*/
 @media (max-width: 420px) {
     .cta {
         padding: 8px 12px;
@@ -518,20 +521,20 @@ a{
 
 .portfolio-page .skills-grid {
     display: flex;
-    flex-direction: column; /* empiler les cartes les unes sous les autres */
-    align-items: center;    /* centrer horizontalement chaque carte */
+    flex-direction: column;
+    align-items: center;
     gap: 24px;
     padding: 20px;
     max-width: 900px;
-    margin: 0 auto; /* centre la grille dans la page */
+    margin: 0 auto;
 }
 
 .portfolio-page .skills-column {
-    width: 75%;           
-    max-width: 720px;      
-    display: block;    
+    width: 75%;
+    max-width: 720px;
+    display: block;
     text-align: center;
-    padding-bottom: 15px; /*Méthode pour faire une marge à l'intérieur*/
+    padding-bottom: 15px; /*Making an inline margin */
     padding-left: 15px;
     padding-right:15px;
 }
@@ -541,7 +544,7 @@ a{
     width: 400px;
     height: auto;
     display: block;
-    margin: 0 auto; /* centre l'image dans la carte */
+    margin: 0 auto;
 }
 
 .title{
@@ -680,6 +683,7 @@ img {
 	width: 100vw;
 	height: 100vh;
 	background-color: rgba(42,157,245,0.5);
+    z-index: 100;
 }
 
 
