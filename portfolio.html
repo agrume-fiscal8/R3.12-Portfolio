@@ -22,29 +22,38 @@
         <a class="nav-link nav-button primary" href="sources/CV_VESIN_Clement.pdf" target="_blank">Download my CV</a>
     </nav>
 
+    <div class="filters">
+        <button class="filterB nav-button primary" data-categorie="tout">Tout</button>
+        <button class="filterB nav-button primary" data-categorie="C#">C#</button>
+        <button class="filterB nav-button primary" data-categorie="HTML/CSS/JS">HTML/CSS/JS</button>
+        <button class="filterB nav-button primary" data-categorie="SQL">SQL</button>
+        <button class="filterB nav-button primary" data-categorie="UML">UML</button>
+
+    </div>
+
     <h1 class="title">My Projects</h1>
     <div class="skills-grid">
-        <div class="skills-column item projects">
+        <div class="projects skills-column item projects" data-categories="SQL,Laravel,UML">
             <h2>Hunimalis replica</h2>
             <img src="sources/Hunimalis_Logo.jpg" class="img_round" alt="Hunimalis">
             <p>Create a replica of Hunimalis website in a team from the UML coneption, databse creation through the
                 developpement</p>
             <a href="Hunimalis.html" class="nav-button primary">Learn more</a>
         </div>
-        <div class="skills-column item projects">
+        <div class="projects skills-column item projects" data-categories="HTML/CSS/JS">
             <h2>Portfolio</h2>
             <img src="sources/HTMLCSSJSlogo.png" class="img_round" alt="Portfolio">
             <p>Develop a professional portfolio to demonstrate my existing skillset and enhance my knowledge in
                 HTML/CSS/JS</p>
             <a href="Project_portfolio.html" class="nav-button primary">Learn more</a>
         </div>
-        <div class="skills-column item projects">
+        <div class="projects skills-column item projects" data-categories="C#,UML">
             <h2>Pilot</h2>
             <img src="sources/Pilot_logo.png" class="img_round" alt="Pilot">
             <p>Concept and develop a replica of a management application for Pilot factory using UML and C#</p>
             <a href="Pilot.html" class="nav-button primary">Learn more</a>
         </div>
-        <div class="skills-column item projects">
+        <div class="projects skills-column item projects" data-categories="C#">
             <h2>Village Tycoon</h2>
             <img src="sources/village_mainMenu.jpg" class="img_round" alt="Village Tycoon">
             <p>Develop a game in C# using XAML</p>

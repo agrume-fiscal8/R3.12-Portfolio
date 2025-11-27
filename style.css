@@ -116,6 +116,10 @@ a{
 #HCJ{
     accent-color: gray;
 }
+
+#DataPP{
+    accent-color: deeppink;
+}
 .cursed{
     width: 100px;
     border-radius: 50%;
@@ -315,7 +319,6 @@ a{
     .nav-button { padding: 8px 10px; font-size: 0.92rem; }
 }
 
-/* ...existing code... */
 
 .item {
     background-color: rgba(0, 0, 0, 0.2);
@@ -497,6 +500,14 @@ a{
 
 
 /* PORTFOLIO */
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
 .projects{
     margin-bottom: 30px;
     border-style: solid;
@@ -536,8 +547,10 @@ a{
 .title{
     display:flex;
     justify-content: center;
+    align-items: center;
     font-size: 40px;
 }
+
 .subtitle{
     font-size: 25px;
 }
@@ -584,6 +597,7 @@ a{
     position: relative;
     z-index: 2;
 }
+
 
 .project-card {
     background-color: rgba(0, 0, 0, 0.1);
@@ -637,6 +651,11 @@ a{
 }
 
 .project-details ul li .fa-check {
+    color: #06b6d4;
+    margin-right: 10px;
+}
+
+.project-details ul li .fa-code {
     color: #06b6d4;
     margin-right: 10px;
 }
@@ -769,7 +788,7 @@ img {
 }
 
 .return{
-    position: absolute;
+    position: sticky;
     left: 50px;
-    top: 150px;
+    top: 125px;
 }

@@ -78,4 +78,30 @@ document.querySelectorAll(".zoomable").forEach(
     }
 )
 
+//Filters
+document.addEventListener('DOMContentLoaded', function() {
+    const buttonsFilter = document.querySelectorAll('.filterB');
+    const projects = document.querySelectorAll('.projects');
 
+    buttonsFilter.forEach(button => {
+        button.addEventListener('click', function() {
+            // 1. Récupérer la catégorie du bouton cliqué
+            const filterCategorie = this.getAttribute('data-categorie');
+
+            // 2. Parcourir tous les projets
+            projects.forEach(project => {
+                const projectCategories = project.getAttribute('data-categories');
+
+                // 3. Masquer/Afficher
+                if (filterCategorie === 'tout' || (projectCategories && projectCategories.includes(filterCategorie))) {
+                    // Affiche le projet (le rend visible)
+                    project.style.display = 'block'
+                } else {
+                    // Masque le projet
+                    project.style.display = 'none';
+                    // projet.classList.add('cache');
+                }
+            });
+        });
+    });
+});
